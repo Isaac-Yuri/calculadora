@@ -1,0 +1,45 @@
+* {
+    font: normal 12pt Arial ;
+}
+
+div{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 450px;
+}
+
+select {
+    width: 483px;
+    border-width: 2px;
+}
+
+p {
+    width: 440px;
+    border-width: 2px;
+    color: gray;
+}
+
+input, select, #res, p {
+    font-size: 15pt;
+    text-align: center;
+    padding: 15px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.733);
+}
+
+button {
+    font-size: 15pt;
+    background-color: blue;
+    color: white;
+    padding: 15px 35px;
+    width: 480px;
+    border-radius: 5px;
+}
