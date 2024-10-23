@@ -1,6 +1,6 @@
 const num1 = document.getElementById("n1");
 const num2 = document.getElementById("n2");
-const selecao = document.querySelector("select");
+const selecao = document.querySelector("select#operacao");
 const resultado = document.getElementById("res");
 
 const operacoes = {
@@ -23,17 +23,20 @@ function calcular() {
         Number(num1.value),
         Number(num2.value)
       );
+      break;
     case "subtrair":
       resultado.innerHTML = operacoes.subrair(
         Number(num1.value),
         Number(num2.value)
       );
+      break;
     case "multiplica":
       resultado.innerHTML = operacoes.multiplicar(
         Number(num1.value),
         Number(num2.value)
       );
-    default:
+      break;
+    case "escolhe":
       alert("Por favor selecione uma operação");
       break;
   }
